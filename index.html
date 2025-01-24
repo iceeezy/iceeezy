@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>หมอปริน</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <div class="logo"><a href="#">PrintSHOP</a>
+        </div>
+        <ul class="links">
+            <li><a href="หน้าแรก">หน้าแรก</a></li>
+            <li><a href="วิธีการสั่งซื้อ">วิธีการสั่งซื้อ</a></li>
+            <li><a href="แจ้งชำระเงิน">แจ้งชำระเงิน</a></li>
+            <li><a href="ติดต่อเรา">ติดต่อเรา</a></li>
+        </ul>
+        <a href="#" class="action_btn">ลงชื่อเข้าใช้</a><li>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="hero">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Gallery">Gallery</a></li>
+            <li><a href="Content">Content</a></li>
+            <li><a href="#" class="action_btn">Get Started</a><li>
+    </div>  
+  </header>
+  <main>
+    <section id="hero"> 
+        </p>
+        <div class="media1-icons">
+           <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-line"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="media2-icons">
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+           <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+       </div>
+    </section>
+  </main>
+  <script>
+    const togglebtn = document.querySelector('.toggle_btn')
+    const togglebtnIcon = document.querySelector('.toggle_btn i')
+    const dropdownmenu = document.querySelector('.dropdown_menu')
+    togglebtn.onclick = function() {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggle_btnIcon.classList.contains = isopen
+      ? (togglebtnIcon.classList.replace(' fa-xmark'," fa-bars"))
+      : (togglebtnIcon.classList.replace(" fa-bars",' fa-xmark'))
+      /* "fa-reguar fa-rectangle-mark"
+      "fa-solid fa-bars" */
+    }
+  </script>
+</body>
+</html>
